@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import Home from "../components/home";
 
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div className="row">
+        {this.props.children}
+      </div>
     );
   }
 }
